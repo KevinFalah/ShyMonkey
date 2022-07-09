@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #68A7AD;
+}
+
+.emoji {
+    font-size: 10rem;
+    cursor: pointer;
+    /* User select berguna untuk user tidak dapat mengklik atau menseleksi element */
+    user-select: none; 
+}
+
+.closed {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: dotted;
+}
+
+/* const openFace = document.querySelector('.open');
+const closedFace = document.querySelector('.closed');
+const emoji = document.querySelectorAll('.emoji');
+
+emoji.forEach(function(e) {
+    e.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.37)';
+})
+
+closedFace.addEventListener('click', () => {
+    if(openFace.classList.contains('open')) {
+        openFace.classList.add('active');
+        closedFace.classList.remove('active')
+    }
+})
+
+openFace.addEventListener('click', () => {
+    if(openFace.classList.contains('open')) {
+        closedFace.classList.add('active')
+        openFace.classList.remove('active')
+    }
+}) */
